@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <title>CWR Trucking</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script defer
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+    <script defer src="js/functions.js"></script>
+</head>
+<body>
+<header>
+    <div class="Header-Container">
+        <a href="#" class="Header-Hamburger">
+            <i class="fa fa-bars"></i>
+        </a>
+        <a href="index.html">
+            <img src="images/CWRLogoNoBackground.png" href="CWRLogo" class="Header-Logo">
+        </a>
+        <nav class="Header-Links">
+            <ul>
+                <a href="#" class="Header-Link"><li>Demolition</li></a>
+                <a href="#" class="Header-Link"><li>Concrete</li></a>
+                <a href="#" class="Header-Link"><li>Landscaping</li></a>
+                <a href="#" class="Header-Link"><li>Hauling</li></a>
+            </ul>
+        </nav>
+        <div class="Header-Phone">
+            <a href="#">
+                <div>
+                    <svg id="icon-phone" viewBox="0 0 32 32">
+                        <title>phone</title>
+                        <path d="M22 20c-2 2-2 4-4 4s-4-2-6-4-4-4-4-6 2-2
+                4-4-4-8-6-8-6 6-6 6c0 4 4.109 12.109 8 16s12 8 16
+                8c0 0 6-4 6-6s-6-8-8-6z"></path>
+                    </svg>
+                    <span class="Header-PhoneNumber">888-888-8888</span>
+                </div>
+            </a>
+        </div>
+    </div>
+    <nav class="Header-Mobile-Links">
+        <a href="index.html">Home</a>
+        <a href="#news">Demolition</a>
+        <a href="#contact">Concrete</a>
+        <a href="#about">Landscaping</a>
+        <a href="#about">Hauling</a>
+        <a href="#about">Contact</a>
+    </nav>
+</header>
+<section class="Contact-Intro-Banner">
+    <div class="Contact-Intro-Banner-Headline">
+        <h1>Best Something Something</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
+            mollis mollis mi non dictum. Duis pharetra luctus turpis
+            faucibus ullamcorper. Phasellus in magna vel quam rutrum
+            suscipit a sit amet massa. Fusce ut augue sit amet orci
+            facilisis convallis. Proin lacus ante, efficitur ut congue ut,
+            ultricies in dolor. Morbi ullamcorper egestas arcu, sed commodo
+            tellus facilisis ut. Nulla faucibus felis in justo sagittis, et
+            molestie magna blandit. Aenean tincidunt dui mauris, et lobortis
+            justo ultrices ac. Quisque finibus, erat sit amet finibus fringilla,
+            massa massa rutrum nisi, quis sodales lorem ante eget purus.
+            Nunc quis tincidunt nulla. Nunc iaculis erat at quam sodales, vel
+            porta enim volutpat. Aenean a massa vel diam euismod convallis.
+            Cras faucibus lobortis finibus.</p>
+        <p>Ut in mauris urna. Phasellus et justo fermentum, fermentum arcu vel,
+            condimentum leo. Phasellus laoreet nunc in nulla porttitor rhoncus.
+            Curabitur sagittis efficitur nibh nec placerat. Ut a tincidunt dolor.
+            Praesent lacinia vestibulum volutpat. Nulla nec mauris consequat arcu
+            condimentum consectetur. Ut ac lobortis quam. Quisque venenatis iaculis
+            elit sed vestibulum.</p>
+    </div>
+</section>
+<section class="Contact-Form">
+    <h2>Contact Us Today</h2>
+    <form action="/action_page.php" method="post">
+        <div class="Contact-Form-Row">
+            <div class="Contact-Form-Input-Box">
+                <label for="firstName">First Name*</label><br>
+                <input name="firstName" id="firstName" type="text" required>
+            </div>
+            <div class="Contact-Form-Input-Box">
+                <label for="lastName">Last Name*</label><br>
+                <input name="lastName" id="lastName" type="text" required>
+            </div>
+        </div>
+        <div class="Contact-Form-Row">
+            <div class="Contact-Form-Input-Box">
+                <label for="phoneNumber">Phone Number*</label><br>
+                <input name="phoneNumber" id="phoneNumber" type="text" required>
+            </div>
+            <div class="Contact-Form-Input-Box">
+                <label for="email">Email*</label><br>
+                <input name="email" id="email" type="text" required>
+            </div>
+        </div>
+        <div class="Contact-Form-Row">
+            <div class="Contact-Form-Input-Box">
+                <label for="phoneNumber">Phone Number*</label><br>
+                <select name="service" required>
+                    <option value="Concrete Prep">Concrete Prep</option>
+                    <option value="Concrete Tear Out">Concrete Tear Out</option>
+                    <option value="Demolition">Demolition</option>
+                    <option value="Land Clearing">Land Clearing</option>
+                    <option value="Grubbing">Grubbing</option>
+                    <option value="Dirt Hauling">Dirt Hauling</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <div class="Contact-Form-Input-Box">
+                <label for="customerStatus">Customer Status</label><br>
+                <select name="customerStatus" id="customerStatus">
+                    <option value="Return">Return Customer</option>
+                    <option value="New">New Customer</option>
+                </select>
+            </div>
+        </div>
+        <div class="Contact-Form-Row">
+            <div class="Contact-Form-Input-Box">
+                <label for="message">Message</label><br>
+                <textarea name="message" id="message"
+                          rows="10" cols="97"
+                          placeholder="Type here..." required></textarea>
+            </div>
+        </div>
+        <div class="Contact-Form-Row Contact-Form-Submit">
+            <div class="Contact-Form-Input-Box">
+                <input type="submit" name="submit" value="Done">
+            </div>
+        </div>
+    </form>
+</section>
+<footer>
+    <div class="Footer-Header">
+        <h2>CWR Trucking / West Haven, UT</h2>
+        <ul>
+            <li><a href="">Demolition</a></li>
+            <li><a href="">Concrete</a></li>
+            <li><a href="">landscaping</a></li>
+            <li><a href="">Hauling</a></li>
+            <li><a href="contact.html">Contact </a></li>
+            <li><a href="">Careers</a></li>
+        </ul>
+    </div>
+    <div class="Footer-Columns">
+        <div>
+            <ul>
+                <li>Address</li>
+                <li>1651 S 300 W</li>
+                <li>Clearfield, UT 84016</li>
+            </ul>
+            <ul>
+                <li>Phone</li>
+                <li>801-940-6023</li>
+            </ul>
+            <ul>
+                <li>Hours</li>
+                <li>8:00am - 7:00pm</li>
+                <li>Monday-Friday</li>
+            </ul>
+        </div>
+    </div>
+    <aside>
+        <h4>&#169; 2019 CWR Trucking | West Haven, UT | All Rights Reserved</h4>
+        <a href="">Privacy Policy</a>
+        <a href="">Site Map</a>
+    </aside>
+</footer>
+</main>
+</body>
+</html>

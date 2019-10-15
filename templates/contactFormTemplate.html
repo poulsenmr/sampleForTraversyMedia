@@ -1,0 +1,59 @@
+<section class="Contact-Form">
+    <h2>Contact Us Today</h2>
+    <form action="/action_page.php" method="post">
+        <div class="Contact-Form-Row">
+            <div class="Contact-Form-Input-Box">
+                <label for="firstName">First Name*</label><br>
+                <input name="firstName" id="firstName" type="text" required>
+            </div>
+            <div class="Contact-Form-Input-Box">
+                <label for="lastName">Last Name*</label><br>
+                <input name="lastName" id="lastName" type="text" required>
+            </div>
+        </div>
+        <div class="Contact-Form-Row">
+            <div class="Contact-Form-Input-Box">
+                <label for="phoneNumber">Phone Number*</label><br>
+                <input name="phoneNumber" id="phoneNumber" type="text" required>
+            </div>
+            <div class="Contact-Form-Input-Box">
+                <label for="email">Email*</label><br>
+                <input name="email" id="email" type="text" required>
+            </div>
+        </div>
+        <div class="Contact-Form-Row">
+            <div class="Contact-Form-Input-Box">
+                <label for="phoneNumber">Phone Number*</label><br>
+                <select name="service" required>
+                    <option value="Concrete Prep">Concrete Prep</option>
+                    <option value="Concrete Tear Out">Concrete Tear Out</option>
+                    <option value="Demolition">Demolition</option>
+                    <option value="Land Clearing">Land Clearing</option>
+                    <option value="Grubbing">Grubbing</option>
+                    <option value="Dirt Hauling">Dirt Hauling</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <div class="Contact-Form-Input-Box">
+                <label for="customerStatus">Customer Status</label><br>
+                <select name="customerStatus" id="customerStatus">
+                    <option value="Return">Return Customer</option>
+                    <option value="New">New Customer</option>
+                </select>
+            </div>
+        </div>
+        <div class="Contact-Form-Row">
+            <div class="Contact-Form-Input-Box">
+                <label for="message">Message</label><br>
+                <textarea name="message" id="message"
+                          rows="10" cols="97"
+                          placeholder="Type here..." required></textarea>
+            </div>
+        </div>
+        <div class="Contact-Form-Row Contact-Form-Submit">
+            <div class="Contact-Form-Input-Box">
+                <input type="submit" name="submit" value="Done">
+            </div>
+        </div>
+    </form>
+</section>

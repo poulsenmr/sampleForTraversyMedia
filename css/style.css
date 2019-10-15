@@ -1,0 +1,618 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    list-style: none;
+    color: black;
+    text-decoration: none;
+    font-family: 'Roboto Slab', serif;
+}
+*:focus{
+    outline: none;
+}
+/* Start Header */
+header {
+    height: 90px;
+    background: lightgray;
+}
+.Header-Container {
+    max-width: 1200px;
+    margin: auto;
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+}
+.Header-Container img {
+    height: 80px;
+    padding: 5px;
+}
+.Header-Container ul li {
+    display: inline;
+    padding: 0 10px;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.Header-Links {
+    padding-top: 60px;
+}
+.Header-Link:hover {
+    text-decoration: underline;
+}
+.Header-Phone {
+    background: red;
+    padding: 34px 15px;
+    font-weight: bold;
+}
+.Header-Phone svg {
+    width: 35px;
+    padding-right: 8px;
+    fill: #000;
+    opacity: .65;
+    vertical-align: -25%;
+}
+.Header-PhoneNumber {
+    font-size: 1.5rem;
+}
+.Header-Hamburger{
+    display: none;
+    padding: 20px;
+    font-size: 2.5rem;
+}
+.Header-Mobile-Links {
+    background: black;
+    color: white;
+    display: none;
+    position:absolute;
+    width : 100%;
+    z-index: 50;
+}
+.Header-Mobile-Links a {
+    color: white;
+    display: block;
+    font-size: 1.5rem;
+    padding: 10px;
+    font-weight: bold;
+}
+@media only screen and (max-width: 900px) {
+    .Header-Hamburger{
+        display: block;
+    }
+    .Header-Links {
+        display: none;
+    }
+    .Header-PhoneNumber{
+        display: none;
+    }
+    .Header-Phone {
+        padding: 20px;
+        background: none;
+    }
+    .Header-Phone svg {
+        width: 45px;
+        padding: 0;
+        opacity: 1;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    header {
+        height: 60px;
+    }
+    .Header-Container {
+        height: 60px;
+    }
+    .Header-Container img {
+        height: 50px;
+    }
+    .Header-Hamburger{
+        padding: 13px;
+        font-size: 2rem;
+    }
+    .Header-Phone {
+        padding: 13px;
+    }
+    .Header-Phone svg {
+        width: 35px;
+    }
+  }
+/* End Header */
+/* Start of Main index.html */
+/* Start of Top-Banner */
+.Top-Banner {
+    background: #FFF;
+    height: 540px;
+    position: relative;
+}
+.mySlides {
+    width: 100%;
+    height: 100%;
+    display: none;
+    background-color: #fff;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: fading 1s;
+}
+@keyframes fading {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+
+}
+.Top-Banner-Image-Demolition{
+    background-image:url("../images/coverTruck1.JPG");
+    display: block;
+}
+.Top-Banner-Image-Concrete{
+    background-image:url("../images/sterling1.JPG");
+}
+.Top-Banner-Image-LandClearing{
+    background-image:url("../images/oldMack1.jpg");
+}
+.Top-Banner-Image-Hauling{
+    background-image:url("../images/sterling1.JPG");
+}
+.Top-Banner-Text-Top {
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 3px 2px #000;
+    font-size: 3rem;
+    padding-top: 90px;
+}
+.Top-Banner-Text-Middle {
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 3px 2px #000;
+    font-size: 2rem;
+    padding: 100px 0;
+}
+.Top-Banner-Button-Case {
+    position: absolute;
+    left: 0;
+    top: 70%;
+    width: 100%;
+}
+.Top-Banner-Text-Button {
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 3px 2px #000;
+    font-size: 2.5rem;
+    background: lightgray;
+    margin: auto;
+    padding: 5px;
+    border-radius: 5px;
+    width: 250px;
+    box-shadow: 0 3px 2px #000;
+}
+.Top-Banner-Button {
+    position: absolute;
+    top: 50%;
+    transform: translate(0%,-50%);
+    border: none;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    text-align: center;
+    background: transparent;
+    font-size: 3rem;
+}
+.Left-Button {
+    left: 0;
+    text-shadow: 3px 0 2px #FFF;
+}
+.Right-Button {
+    right: 0;
+    text-shadow: -3px 0 2px #FFF;
+}
+.Top-Banner-Select-Case{
+    position: absolute;
+    left: 0;
+    top: 90%;
+    width: 100%;
+}
+.Top-Banner-Select-Buttons{
+    width: 200px;
+    margin: auto;
+    text-align: center;
+
+}
+.mySlidesSelect {
+    height: 15px;
+    width: 15px;
+    padding: 0;
+    margin: 10px;
+    background: transparent;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    display: inline-block;
+    cursor: pointer;
+}
+.mySlidesSelect:hover{
+    background: darkgreen;
+}
+@media only screen and (max-width: 600px) {
+    .Top-Banner {
+        height: 450px;
+    }
+    .Top-Banner-Text-Middle {
+        font-size: 1rem;
+    }
+    .Top-Banner-Button-Case {
+        top: 70%;
+    }
+    .Top-Banner-Text-Button {
+        font-size: 1.5rem;
+        width: 200px;
+    }
+}
+/* End of Top-Banner */
+/* Start of Middle-Contact-Banner */
+.Middle-Contact-Banner {
+    height: 450px;
+    width: 100%;
+}
+.Middle-Contact-Banner-Container {
+    width: 1200px;
+    height: calc(100% - 20px);
+    padding: 10px 0;
+    margin: 0 auto;
+    display: flex;
+}
+.Middle-Contact-Banner-Text {
+    padding: 30px 0 30px 0;
+    position: relative;
+}
+.Middle-Contact-Banner-Text h2{
+    font-size: 2rem;
+}
+.Middle-Contact-Banner-Text p{
+     font-size: 1.5rem;
+ }
+.Middle-Contact-Banner-Text a{
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+.Middle-Contact-Banner-Text span{
+    font-size: 1.5rem;
+    padding: 10px;
+    background: #444444;
+    color: #FFFFFF;
+    position: absolute;
+    left: 0;
+    bottom: 30px;
+}
+.Middle-Contact-Banner-Img {
+    width: 600px;
+    overflow: hidden;
+    margin-left: auto;
+}
+.Middle-Contact-Banner-Img img {
+    width: 600px
+}
+@media only screen and (max-width: 1200px) {
+    .Middle-Contact-Banner-Container {
+        width: 1000px;
+    }
+    .Middle-Contact-Banner-Img {
+        width: 500px;
+        margin: auto;
+    }
+    .Middle-Contact-Banner-Text {
+        width: 500px;
+    }
+    .Middle-Contact-Banner-Img img {
+        width: 500px
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .Middle-Contact-Banner-Container {
+        width: 800px;
+    }
+    .Middle-Contact-Banner-Text {
+        width: 400px;
+    }
+    .Middle-Contact-Banner-Img {
+        width: 400px;
+        margin: auto;
+    }
+    .Middle-Contact-Banner-Img img {
+        width: 400px;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .Middle-Contact-Banner{
+        height: auto;
+    }
+    .Middle-Contact-Banner-Container {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .Middle-Contact-Banner-Text {
+        width: auto;
+        height: auto;
+        padding: 10px 10px 100px 10px;
+    }
+    .Middle-Contact-Banner-Text h2{
+        font-size: 2.5rem;
+        margin: 0 0 10px 0
+    }
+    .Middle-Contact-Banner-Text p{
+        font-size: 1rem;
+        margin: 0 0 10px 0
+    }
+    .Middle-Contact-Banner-Text span{
+        left: 10px;
+    }
+    .Middle-Contact-Banner-Img {
+        width: calc(100% - 20px);
+        margin: auto;
+    }
+    .Middle-Contact-Banner-Img img {
+        width: 100%;
+    }
+}
+/* End of Middle-Contact-Banner */
+/* Start of About-US */
+.About-Us{
+    height: 450px;
+    width: 100%;
+    background: silver;
+}
+.About-Us-Container {
+    width: 1200px;
+    height: 430px;
+    padding: 10px 0;
+    margin: 0 auto;
+    display: flex;
+}
+.About-Us-Img {
+    width: 600px;
+    overflow: hidden;
+    margin-left: auto;
+}
+.About-Us-Img img {
+    width: 600px;
+}
+.About-Us-Text {
+    width: 600px;
+    padding: 30px 0;
+    position: relative;
+}
+.About-Us-Text h2{
+    font-size: 2rem;
+    margin-left: 30px;
+}
+.About-Us-Text p{
+    font-size: 1.5rem;
+    margin-left: 30px;
+}
+.About-Us-Text span{
+    font-size: 1.5rem;
+    padding: 10px;
+    background: #444444;
+    color: #FFFFFF;
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+}
+@media only screen and (max-width: 1200px) {
+    .About-Us-Container {
+        width: 1000px;
+    }
+    .About-Us-Img {
+        width: 500px;
+        margin: auto;
+    }
+    .About-Us-Text {
+        width: 500px;
+    }
+    .About-Us-Img img {
+        width: 500px
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .About-Us-Container {
+        width: 800px;
+    }
+    .About-Us-Text {
+        width: 400px;
+    }
+    .About-Us-Img {
+        width: 400px;
+        margin: auto;
+    }
+    .About-Us-Img img {
+        width: 400px;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .About-Us {
+        height: auto;
+    }
+    .About-Us-Banner{
+        height: auto;
+    }
+    .About-Us-Container {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .About-Us-Text {
+        width: auto;
+        height: auto;
+        padding: 10px 10px 100px 10px;
+    }
+    .About-Us-Text h2{
+        font-size: 2.5rem;
+        margin: 0 0 10px 0
+    }
+    .About-Us-Text p{
+        font-size: 1rem;
+        margin: 0 0 10px 0
+    }
+    .About-Us-Text span{
+        left: 10px;
+    }
+    .About-Us-Img {
+        width: calc(100% - 20px);
+        margin: auto;
+    }
+    .About-Us-Img img {
+        width: 100%;
+    }
+}
+/* End of About-Us */
+/* Start of Footer */
+footer{
+    background: #444444;
+    padding: 10px;
+}
+.Footer-Header {
+    background: #444444;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.Footer-Header h2 {
+    color: #FFFFFF;
+    font-size: 2.5rem;
+}
+.Footer-Header ul li {
+    display: inline;
+    padding: 0 5px;
+}
+.Footer-Header ul li a {
+    color: #FFFFFF;
+    font-size: 1.5rem;
+}
+.Footer-Header ul li a:hover {
+    text-decoration: underline #b20609;
+}
+.Footer-Columns {
+    display: flex;
+    justify-content: space-around;
+}
+footer h4 {
+    border-top: black 1px solid;
+}
+footer ul li {
+    color: #FFFFFF;
+}
+.Footer-Columns ul li:first-child {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #b20609;
+    text-decoration: underline #000;
+}
+footer aside {
+    margin: 30px 10px 10px;
+}
+footer aside h4 {
+    margin: 10px 0;
+}
+footer aside a {
+    margin-right: 10px;
+}
+footer aside a:hover {
+    color: #FFFFFF;
+}
+/* End of Footer */
+/* End of Main index.html */
+/* Start of contact.html */
+.Contact-Intro-Banner {
+    display: flex;
+    justify-content: center;
+    height: 450px;
+}
+.Contact-Intro-Banner-Headline {
+    width: 1000px;
+    padding: 10px;
+}
+.Contact-Intro-Banner-Headline h1 {
+    margin: 10px;
+}
+
+.Contact-Intro-Banner-Headline p {
+    margin: 20px 10px;
+}
+
+.Contact-Form {
+    text-align: center;
+    padding: 10px;
+    width: 1000px;
+    margin: auto;
+}
+.Contact-Form h2 {
+    font-size: 2rem;
+}
+.Contact-Form input, .Contact-Form select{
+    border: none;
+    border-bottom: 1px solid #000000;
+    width: 400px;
+    height: 30px;
+}
+textarea {
+    margin-top: 10px;
+}
+.Contact-Form select {
+    margin-top: 10px;
+}
+.Contact-Form-Row {
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+    margin: 10px;
+}
+.Contact-Form-Submit {
+    display: block;
+    margin-left: 55px;
+}
+.Contact-Form-Input-Box label {
+    font-weight: bold;
+}
+input[type="submit"] {
+    width: 150px;
+    height: 65px;
+    display: block;
+    margin-bottom: 10px;
+    background: #444444;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+@media only screen and (max-width: 1000px) {
+    .Contact-Form {
+        text-align: center;
+        width: 400px;
+    }
+    .Contact-Form-Row {
+        display: block;
+    }
+    .Contact-Form-Input-Box {
+        margin: 10px auto;
+        text-align: left;
+    }
+    textarea {
+        width: 400px;
+    }
+    .Contact-Form-Submit {
+        margin-left: 10px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .Contact-Form {
+        width: 300px;
+    }
+    textarea {
+        width: 300px;
+    }
+    .Contact-Form input, .Contact-Form select{
+        width: 300px;
+    }
+}
+/* End of contact.html */
